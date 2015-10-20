@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var factLabel: UILabel!
+    
+    var facts = FactGenerator()
+    
+    @IBAction func factButtonPressed(sender: AnyObject) {
+        factLabel.text = facts.randomFact()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

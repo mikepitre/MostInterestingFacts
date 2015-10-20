@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FactGenerator { // 1
+class FactGenerator {
     
     var facts : [String];
     
